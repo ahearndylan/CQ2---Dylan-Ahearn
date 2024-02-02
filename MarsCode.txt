@@ -1,0 +1,19 @@
+// Write your code here
+    int count = 0; // Counter for the number of letters changed
+
+    for (int i = 0; i < s.length(); i++) {
+        char expected; 
+        if (i % 3 == 1) { 
+            expected = 'O';
+        } else { 
+            expected = 'S';
+        }
+
+        if (s.charAt(i) != expected) {
+            count++; 
+        }
+    }
+
+        return count;
+    }
+}
